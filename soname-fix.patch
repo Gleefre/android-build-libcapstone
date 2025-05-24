@@ -1,0 +1,13 @@
+diff --git a/capstone/Makefile b/capstone/Makefile
+index f84d43c..af588b5 100644
+--- a/capstone/Makefile
++++ b/capstone/Makefile
+@@ -394,7 +394,7 @@ else
+ EXT = so
+ VERSION_EXT = $(EXT).$(API_MAJOR)
+ AR_EXT = a
+-$(LIBNAME)_LDFLAGS += -Wl,-soname,lib$(LIBNAME).$(VERSION_EXT)
++$(LIBNAME)_LDFLAGS += -Wl,-soname,lib$(LIBNAME).$(EXT)
+ endif
+ endif
+ endif
